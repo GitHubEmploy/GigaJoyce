@@ -1,0 +1,5 @@
+{"kingdom": {"1": "Mathematics Kingdom", "2": "Physics Kingdom"},
+"sexo": {"1": "Biotype 1", "2": "Biotype 2", "0": "Interbiotype"},
+"raça": {"0": "Human", "1": "Elf", "2": "Wolf", "3": "Dwarf"},
+"avatar": {"0": "Default 1", "1": "Default 2"}
+}
