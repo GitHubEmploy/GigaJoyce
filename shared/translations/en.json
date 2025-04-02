@@ -1,0 +1,153 @@
+{
+    "array_setting": {
+        "title": "Configure {setting_name}",
+        "description": "Manage the array values.",
+        "new_value": "New Value",
+        "no_items_to_remove": "There are no items to remove.",
+        "select_to_remove": "Select an item to remove",
+        "changes_confirmed": "Changes confirmed!"
+    },
+    "select_to_remove": "Select to remove",
+    "no_items_to_remove": "There are no items to remove",
+    "error_removing_value": "Error while removing the item",
+    "select_channel": {
+        "placeholder": "Select a channel",
+        "current": "Current channel: {channel_name}",
+        "updated": "Selected channel: {channel_name}",
+        "timeout": "Selection timed out."
+    },
+    "settings": {
+        "configure": "Configure {setting_name}",
+        "completed": "Configuration of {setting_name} completed",
+        "success": "The configuration has been successfully updated!",
+        "confirm": "Confirm"
+    },
+    "error": {
+        "title": "Incomplete Configuration",
+        "incomplete": "You have not filled in all the required fields!",
+        "failed_to_create_embed": "Failed to create the embed."
+    },
+    "current_value": "Current Value",
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "add": "Add",
+    "remove": "Remove",
+    "confirm": "Confirm",
+    "enable": "Enable",
+    "disable": "Disable",
+    "timeout": "Time expired.",
+    "dynamic_select": {
+        "configure": "Configure {setting_name}",
+        "placeholder": "Select an option",
+        "no_options": "No options available to select."
+    },
+    "embed": {
+        "title": "Title",
+        "description": "Description",
+        "no_description": "No description available"
+    },
+    "member": {
+        "placeholder": "Select a member",
+        "title": "Configure {setting_name}",
+        "description": "Select a member from the server.",
+        "multiple_selected": "Selected members: {members}",
+        "single_selected": "Selected member: {member}",
+        "field": "Name: {name}\nMention: {mention}\nID: {id}"
+    },
+    "boolean_setting": {
+        "title": "Configure {setting_name}"
+    },
+    "number_setting": {
+        "title": "Configure {setting_name}",
+        "description": "Enter a numerical value for this setting.",
+        "current_value": "Current Value",
+        "not_defined": "Not defined",
+        "set_value": "Set Value",
+        "enter_value": "Please enter a new numerical value in the chat.",
+        "invalid_number": "The value you entered is not a valid number. Try again.",
+        "previous_value": "Previous Value",
+        "new_value": "New Value",
+        "timeout": "Time expired for entering a value.",
+        "timeout_error": "No value was entered within the time limit.",
+        "display_value": "Current Value: {value}"
+    },
+    "option_setting": {
+        "title": "Configure {setting_name}",
+        "selected": "Option Selected",
+        "success": "You have successfully selected: {option_name}",
+        "timeout": "Time expired for selecting an option.",
+        "timeout_error": "No option was selected within the time limit.",
+        "display_value": "Selected Option: {option_name}"
+    },
+    "role_setting": {
+        "title": "Configure {setting_name}",
+        "description": "Select a role from the list.",
+        "placeholder": "Select a role",
+        "selected": "Role selected: {role_name}",
+        "timeout_error": "You didn't select a role in time.",
+        "display_value": "Name: {role_name}\nMention: <@&{role_id}>"
+    },
+    "select_setting": {
+        "title": "Configure {setting_name}",
+        "description": "Choose an option: {description}",
+        "placeholder": "Select an option",
+        "selected": "You selected: {selected}",
+        "timeout_error": "You didn't select an option in time.",
+        "display_value": "Selected options: {selected}"
+    },
+    "string_setting": {
+        "title": "Configure {setting_name}",
+        "current_value": "Current Value",
+        "set": "Set",
+        "enter_value": "You have 30 seconds to send the new value.",
+        "timeout": "You didn't send a value in time.",
+        "too_long": "Value too long to display.",
+        "not_defined": "Not defined.",
+        "previous_value": "Previous Value",
+        "new_value": "New Value",
+        "display_value": "Value: {value}"
+    },
+    "embed_creator": {
+        "default_title": "Placeholder",
+        "default_description": "This is a placeholder description.",
+        "editing": "Editing",
+        "error": "Error",
+        "error_timeout": "You didn't respond in time.",
+        "prompts": {
+          "title": "What will be the new title?",
+          "description": "What will be the new description?",
+          "color": "What will be the new color? (Hexadecimal, e.g., #FFFFFF)",
+          "image": "What will be the new image URL?",
+          "thumbnail": "What will be the new thumbnail URL?",
+          "footer_text": "What will be the new footer text?",
+          "footer_icon": "What will be the new footer icon URL?",
+          "author_name": "What will be the new author name?",
+          "author_icon": "What will be the new author icon URL?",
+          "field_name": "What will be the new field name?",
+          "field_value": "What will be the new field value?",
+          "field_position": "What will be the new field position?",
+          "import": "Paste your embed code here."
+        },
+        "buttons": {
+          "title": "Title",
+          "description": "Description",
+          "color": "Color",
+          "image": "Image",
+          "thumbnail": "Thumbnail",
+          "field": "Fields",
+          "footer": "Footer",
+          "author": "Author",
+          "import": "Import",
+          "export": "Export",
+          "finish": "Finish"
+        }
+    },
+
+    "paginator": {
+        "previous": "Previous",
+        "next": "Next",
+        "select": "Select",
+        "last_page": "You are on the last page.",
+        "first_page": "You are on the first page."
+      }
+}

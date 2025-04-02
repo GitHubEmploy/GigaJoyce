@@ -1,0 +1,30 @@
+{
+    "en": {
+        "help_title": "Help Menu",
+        "help_description": "List of available commands:",
+        "command_not_found": "Command not found.",
+        "back_to_main_menu": "Back to Main Menu",
+        "previous_page": "Previous",
+        "next_page": "Next",
+        "select_placeholder": "Select a command for detailed help...",
+        "subcommands": "Subcommands",
+        "usage": "Usage",
+        "examples": "Examples",
+        "set_language_success": "Language set to {language}.",
+        "set_language_invalid": "Invalid language code."
+    },
+    "pt": {
+        "help_title": "Menu de Ajuda",
+        "help_description": "Lista de comandos disponíveis:",
+        "command_not_found": "Comando não encontrado.",
+        "back_to_main_menu": "Voltar ao Menu Principal",
+        "previous_page": "Anterior",
+        "next_page": "Próximo",
+        "select_placeholder": "Selecione um comando para ajuda detalhada...",
+        "subcommands": "Subcomandos",
+        "usage": "Uso",
+        "examples": "Exemplos",
+        "set_language_success": "Idioma configurado para {language}.",
+        "set_language_invalid": "Código de idioma inválido."
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "xp_command_executed": ":emoji1: Your XP command has been executed successfully!",
+    "xp_current_xp": "You currently have {xp} XP and are at level {level}.",
+    "error_loading_translations": "An error occurred while loading translations.",
+    "settings": {
+        "xp_multiplier": {
+            "name": "XP Multiplier",
+            "description": "Set XP multipliers for roles in the server and make important roles stand out. 🌟",
+            "role": {
+                "name": "Role",
+                "description": "Choose the role that will have the XP multiplier."
+            },
+            "multiplier": {
+                "name": "Multiplier",
+                "description": "Set the XP multiplier for this role (e.g., 1.5)."
+            },
+            "role_multiplier": {
+                "name": "Role Multiplier",
+                "description": "Assign specific XP multipliers to each role in the server."
+            },
+            "embed_title": "XP Multiplier Configuration",
+            "embed_description": "Customize how XP multipliers affect roles in the server."
+        },
+
+        "role_by_xp": {
+            "embed_title": "XP-Based Role Assignments",
+            "embed_description": "Below is the configuration of roles assigned based on XP levels.",
+            "remove_previous_status": "Stacked Roles Enabled",
+            "name": "Role Assignment by XP",
+            "description": "Configure role assignments based on XP levels.",
+            "remove_previous": {
+                "name": "Remove Previous Role",
+                "description": "If enabled, the previous role will be removed when a new role is assigned."
+            },
+            "role_xp_list": {
+            "name": "XP Role Assignments",
+            "description": "List of roles and their required XP levels."
+            },
+            "role_xp": {
+                "name": "Role XP Entry",
+                "description": "An individual role assignment based on XP.",
+                "xp_required": {
+                    "name": "XP Required",
+                    "description": "The amount of XP required to assign this role."
+                },
+                "assigned_role": {
+                    "name": "Assigned Role",
+                    "description": "The role to assign when the XP requirement is met."
+                }
+            }
+        }
+
+    },
+    "common": {
+        "enabled": "Enabled",
+        "disabled": "Disabled"
+      }
+}

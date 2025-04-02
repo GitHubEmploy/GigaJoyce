@@ -1,0 +1,72 @@
+{
+    "help": {
+        "back_to_menu": "Back to Menu",
+        "command_not_found": "The command `{command}` was not found.",
+        "detailed_title": "Detailed Help: {command}",
+        "menu_title": "Help Menu",
+        "select_command_title": "Select a Command",
+        "select_command_description": "Choose a command to see its details.",
+        "select_instructions": "Use the dropdown menu to select a command.",
+        "usage": "Usage",
+        "examples": "Examples",
+        "no_description": "No description available.",
+        "no_usage": "No usage information available.",
+        "no_examples": "No examples available.",
+        "select_module": "Select a Module",
+        "modules": "Modules",
+        "back": "Back",
+        "commands_in_module": "Commands in Module: "
+    }, 
+    "settings": {
+        "error": {
+            "conflict": "Setting found in both guild and user, this shouldn't happen. Please contact the developer.",
+            "not_found": "Setting not found.. :(",
+            "permission_denied": "You do not have permission to change this setting.",
+            "condition_not_met": "This setting is currently unavailable for you.",
+            "timeout": "Time is up.",
+            "guild_only": "This command can only be used in servers."
+        },
+        "success": {
+            "updated": "Setting updated successfully!"
+        },
+        "autocomplete": {
+            "guild_setting": "[Server] {name}",
+            "user_setting": "[User] {name}"
+        },
+        "language": {
+            "name": "Language",
+            "description": "Select the language for the server"
+        }
+    },
+    "permissions": {
+        "command_group": {
+        "name": "permissions",
+        "description": "Permission management group"
+        },
+        "subcommands": {
+        "set": {
+            "name": "set",
+            "description": "Set permission overrides",
+            "attachment_option": {
+            "name": "permission",
+            "description": "Permission to set in YAML"
+            },
+            "success": "Permissions updated successfully.",
+            "invalid_attachment": "Invalid attachment provided.",
+            "invalid_permission": "Invalid permission format.",
+            "invalid_permission_base": "Invalid base permission for ID: {id}."
+        },
+        "list": {
+            "name": "list",
+            "description": "List permission overrides",
+            "file_name": "overrides.yaml",
+            "file_description": "Permission overrides exported successfully."
+        }
+        },
+        "errors": {
+        "missing_administrator": "You need administrator permissions to use this command.",
+        "invalid_yaml": "The provided YAML file could not be parsed."
+        }
+    }
+    
+}

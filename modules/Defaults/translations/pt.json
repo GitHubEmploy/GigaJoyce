@@ -1,0 +1,71 @@
+{
+    "help": {
+        "back_to_menu": "Voltar ao Menu",
+        "command_not_found": "O comando `{command}` não foi encontrado.",
+        "detailed_title": "Ajuda Detalhada: {command}",
+        "menu_title": "Menu de Ajuda",
+        "select_command_title": "Selecione um Comando",
+        "select_command_description": "Escolha um comando para ver os detalhes.",
+        "select_instructions": "Use o menu suspenso para selecionar um comando.",
+        "usage": "Uso",
+        "examples": "Exemplos",
+        "no_description": "Nenhuma descrição disponível.",
+        "no_usage": "Nenhuma informação de uso disponível.",
+        "no_examples": "Nenhum exemplo disponível.",
+        "select_module": "Selecione um Menu",
+        "modules": "Módulos",
+        "back": "Voltar",
+        "commands_in_module": "Comandos dentro do módulo: "
+    },
+    "settings": {
+        "error": {
+        "conflict": "Configuração encontrada em guild e usuário, isso não deveria acontecer. Por favor, contate o desenvolvedor.",
+        "not_found": "Configuração não encontrada.. :(",
+        "permission_denied": "Você não tem permissão para mudar essa configuração.",
+        "condition_not_met": "Essa configuração não está disponível no momento para você.",
+        "timeout": "Tempo esgotado.",
+        "guild_only": "Este comando só pode ser usado em servidores."
+        },
+        "success": {
+        "updated": "Configuração atualizada com sucesso!"
+        },
+        "autocomplete": {
+            "guild_setting": "[Servidor] {name}",
+            "user_setting": "[Usuário] {name}"
+        },        
+        "language": {
+            "name": "Idioma",
+            "description": "Selecione um idioma para o servidor"
+        }
+    },
+    "permissions": {
+        "command_group": {
+        "name": "Permissões",
+        "description": "Grupo de gerenciamento de permissões"
+        },
+        "subcommands": {
+        "set": {
+            "name": "setar",
+            "description": "Definir overrides de permissão",
+            "attachment_option": {
+            "name": "permissao",
+            "description": "Permissão a ser definida em YAML"
+            },
+            "success": "Permissões atualizadas com sucesso.",
+            "invalid_attachment": "Anexo inválido fornecido.",
+            "invalid_permission": "Formato de permissão inválido.",
+            "invalid_permission_base": "Permissão base inválida para ID: {id}."
+        },
+        "list": {
+            "name": "Listar",
+            "description": "Listar overrides de permissão",
+            "file_name": "overrides.yaml",
+            "file_description": "Overrides de permissão exportados com sucesso."
+        }
+        },
+        "errors": {
+        "missing_administrator": "Você precisa de permissões de administrador para usar este comando.",
+        "invalid_yaml": "O arquivo YAML fornecido não pôde ser analisado."
+        }
+    }      
+}
