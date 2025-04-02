@@ -17,3 +17,5 @@ gpt.0
 .venv
 .env
 client_secrets.json
+.vscode
+.vscode/*
