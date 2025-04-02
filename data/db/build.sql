@@ -3,16 +3,7 @@ CREATE TABLE IF NOT EXISTS guilds (
 	prefix text DEFAULT "s!"
 );
 
-CREATE TABLE IF NOT EXISTS bibliotecarios (
-    id integer PRIMARY KEY,
-    name text,
-    guild_id integer
-);
 
-CREATE TABLE IF NOT EXISTS links (
-    link_id text PRIMARY KEY,
-    link_url text
-);
 
 
 CREATE TABLE IF NOT EXISTS threat (
@@ -24,24 +15,6 @@ CREATE TABLE IF NOT EXISTS threat (
     arquivo_link text
 );
 
-CREATE TABLE IF NOT EXISTS channels (
-    guild_id integer,
-    name text,
-    channel_id integer
-);
-
--- CREATE TABLE IF NOT EXISTS upload (
---     message_id integer PRIMARY KEY,
---     user_id integer,
---     username text,
---     idiom text,
---     hashtag text,
---     title text,
---     link_f text,
---     scan_l text,
---     pdf_path text,
---     status text
--- );
 
 CREATE TABLE IF NOT EXISTS mutes (
     user_id integer,
@@ -66,7 +39,7 @@ CREATE TABLE IF NOT EXISTS characters (
     user_id integer,
     username text,
     kingdom integer,
-    sexo integer,
+    sex integer,
     avatar integer,
     race integer,
     guild_id integer DEFAULT NULL,
@@ -119,12 +92,4 @@ CREATE TABLE IF NOT EXISTS pets_user (
     FOREIGN KEY (pet_id) REFERENCES pets(id)
     FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
-
--- CREATE TABLE IF NOT EXISTS vips (
---     id integer PRIMARY KEY,
---     user_id integer,
---     images_left integer,
---     subscription_date text,
---     FOREIGN KEY (user_id) REFERENCES users(user_id)
--- );
 

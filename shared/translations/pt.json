@@ -1,0 +1,154 @@
+{
+    "array_setting": {
+        "title": "Configurar {setting_name}",
+        "description": "Gerencie os valores do array.",
+        "new_value": "Novo Valor",
+        "no_items_to_remove": "Não há itens para remover.",
+        "select_to_remove": "Selecione o item para remover",
+        "changes_confirmed": "Alterações confirmadas!"
+    },
+    "select_to_remove": "Selecione para remover.",
+    "no_items_to_remove": "Não tem itens para remover",
+    "error_removing_value": "Erro ao remover o item",
+    "select_channel": {
+        "placeholder": "Selecione um canal",
+        "current": "Canal atual: {channel_name}",
+        "updated": "Canal selecionado: {channel_name}",
+        "timeout": "Seleção expirada."
+    },
+    "settings": {
+        "configure": "Configurar {setting_name}",
+        "completed": "Configuração de {setting_name} concluída",
+        "success": "A configuração foi alterada com sucesso!",
+        "confirm": "Confirmar"
+    },
+    "error": {
+        "title": "Configuração Incompleta",
+        "incomplete": "Você não preencheu todos os campos obrigatórios!",
+        "failed_to_create_embed": "Falha ao criar o embed."
+    },
+    "current_value": "Valor Atual",
+    "enabled": "Ativado",
+    "disabled": "Desativado",
+    "add": "Adicionar",
+    "remove": "Remover",
+    "confirm": "Confirmar",
+    "enable": "Ativar",
+    "disable": "Desativar",
+    "timeout": "Tempo esgotado.",
+    "dynamic_select": {
+        "configure": "Configurar {setting_name}",
+        "placeholder": "Selecione uma opção",
+        "no_options": "Nenhuma opção disponível para selecionar."
+    },
+    "embed": {
+        "title": "Título",
+        "description": "Descrição",
+        "no_description": "Nenhuma descrição disponível"
+    },
+    "member": {
+        "placeholder": "Selecione um membro",
+        "title": "Configurar {setting_name}",
+        "description": "Selecione um membro do servidor.",
+        "multiple_selected": "Membros selecionados: {members}",
+        "single_selected": "Membro selecionado: {member}",
+        "field": "Nome: {name}\nMenção: {mention}\nID: {id}"
+    },
+    "boolean_setting": {
+        "title": "Configurar {setting_name}"
+    },
+    "number_setting": {
+        "title": "Configurar {setting_name}",
+        "description": "Insira um valor numérico para esta configuração.",
+        "current_value": "Valor Atual",
+        "not_defined": "Não definido",
+        "set_value": "Definir Valor",
+        "enter_value": "Por favor, insira um novo valor numérico no chat.",
+        "invalid_number": "O valor inserido não é um número válido. Tente novamente.",
+        "previous_value": "Valor Anterior",
+        "new_value": "Novo Valor",
+        "timeout": "Tempo expirado para inserir um valor.",
+        "timeout_error": "Nenhum valor foi inserido dentro do tempo limite.",
+        "display_value": "Valor Atual: {value}"
+    },
+    "option_setting": {
+        "title": "Configurar {setting_name}",
+        "selected": "Opção Selecionada",
+        "success": "Você selecionou com sucesso: {option_name}",
+        "timeout": "Tempo expirado para selecionar uma opção.",
+        "timeout_error": "Nenhuma opção foi selecionada dentro do tempo limite.",
+        "display_value": "Opção Selecionada: {option_name}"
+    },
+    "role_setting": {
+        "title": "Configurar {setting_name}",
+        "description": "Selecione um cargo da lista.",
+        "placeholder": "Selecione um cargo",
+        "selected": "Cargo selecionado: {role_name}",
+        "timeout_error": "Você não selecionou um cargo a tempo.",
+        "display_value": "Nome: {role_name}\nMenção: <@&{role_id}>"
+    },
+    "select_setting": {
+        "title": "Configurar {setting_name}",
+        "description": "Escolha uma opção: {description}",
+        "placeholder": "Selecione uma opção",
+        "selected": "Você selecionou: {selected}",
+        "timeout_error": "Você não selecionou uma opção a tempo.",
+        "display_value": "Opções selecionadas: {selected}"
+    },
+    "string_setting": {
+        "title": "Configurar {setting_name}",
+        "current_value": "Valor Atual",
+        "set": "Definir",
+        "enter_value": "Você tem 30 segundos para enviar o novo valor.",
+        "timeout": "Você não enviou um valor a tempo.",
+        "too_long": "Valor muito longo para exibir.",
+        "not_defined": "Não definido.",
+        "previous_value": "Valor Anterior",
+        "new_value": "Novo Valor",
+        "display_value": "Valor: {value}"
+    },
+
+    "embed_creator": {
+        "default_title": "Espaço reservado",
+        "default_description": "Esta é uma descrição de espaço reservado.",
+        "editing": "Editando",
+        "error": "Erro",
+        "error_timeout": "Você não respondeu a tempo.",
+        "prompts": {
+          "title": "Qual será o novo título?",
+          "description": "Qual será a nova descrição?",
+          "color": "Qual será a nova cor? (Hexadecimal, ex.: #FFFFFF)",
+          "image": "Qual será o novo URL da imagem?",
+          "thumbnail": "Qual será o novo URL do thumbnail?",
+          "footer_text": "Qual será o novo texto do rodapé?",
+          "footer_icon": "Qual será o novo ícone do rodapé?",
+          "author_name": "Qual será o novo nome do autor?",
+          "author_icon": "Qual será o novo ícone do autor?",
+          "field_name": "Qual será o novo nome do campo?",
+          "field_value": "Qual será o novo valor do campo?",
+          "field_position": "Qual será a nova posição do campo?",
+          "import": "Cole o código do seu embed aqui."
+        },
+        "buttons": {
+          "title": "Título",
+          "description": "Descrição",
+          "color": "Cor",
+          "image": "Imagem",
+          "thumbnail": "Thumbnail",
+          "field": "Campos",
+          "footer": "Rodapé",
+          "author": "Autor",
+          "import": "Importar",
+          "export": "Exportar",
+          "finish": "Finalizar"
+        }
+    },
+
+    "paginator": {
+        "previous": "Anterior",
+        "next": "Próximo",
+        "select": "Selecionar",
+        "last_page": "Você está na última página.",
+        "first_page": "Você está na primeira página."
+      }
+}

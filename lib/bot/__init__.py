@@ -33,11 +33,8 @@ COGS = [path.split("\\")[-1][:-3] for path in glob("./lib/cogs/*.py")]
 
 IGNORE_EXCEPTIONS = (
 CommandNotFound, BadArgument, MissingPermissions, MissingRole, MissingAnyRole, MissingRequiredArgument, NotOwner)
-
-# intents = Intents.default()
-# intents.message_content = True
-
 message_cooldown = CooldownMapping.from_cooldown(1.0, 10, BucketType.user)
+
 # bot = commands.Bot(command_prefix="s!", intents=intents)
 
 config_keys = dotenv_values(".env")
@@ -191,7 +188,7 @@ class Bot(BotBase):
             while not self.cogs_ready.all_ready():
                 await asyncio.sleep(0.5)
 
-            await self.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="O Universo"))
+            await self.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="TechJoyce"))
             
             print('Logged in as {0.user}'.format(self))    # Lets you know when the bot is online
             try:
@@ -325,45 +322,45 @@ class Bot(BotBase):
         # Check for role updates based on XP
         await self.check_and_update_roles(user, guild, new_xp)
 
-async def check_and_update_roles(self, user, guild, xp):
-    """
-    Check the user's XP against the guild's role requirements and update their roles accordingly.
-    :param user: The user whose XP is being checked.
-    :param guild: The guild where the XP is being checked.
-    :param xp: The user's current XP.
-    """
-    # Fetch the role requirements from the database
-    role_requirements = await self.db.find("role_requirements", {"guild_id": guild.id})
-    
-    if not role_requirements:
-        return  # No role requirements set for this guild
+    async def check_and_update_roles(self, user, guild, xp):
+        """
+        Check the user's XP against the guild's role requirements and update their roles accordingly.
+        :param user: The user whose XP is being checked.
+        :param guild: The guild where the XP is being checked.
+        :param xp: The user's current XP.
+        """
+        # Fetch the role requirements from the database
+        role_requirements = await self.db.find("role_requirements", {"guild_id": guild.id})
+        
+        if not role_requirements:
+            return  # No role requirements set for this guild
 
-    # Sort roles by XP requirement in descending order to assign the highest role possible
-    role_requirements.sort(key=lambda r: r["xp_required"], reverse=True)
+        # Sort roles by XP requirement in descending order to assign the highest role possible
+        role_requirements.sort(key=lambda r: r["xp_required"], reverse=True)
 
-    new_role = None
-    for role_requirement in role_requirements:
-        if xp >= role_requirement["xp_required"]:
-            new_role = guild.get_role(role_requirement["role_id"])
-            break
+        new_role = None
+        for role_requirement in role_requirements:
+            if xp >= role_requirement["xp_required"]:
+                new_role = guild.get_role(role_requirement["role_id"])
+                break
 
-    if not new_role:
-        return  # No new role to assign
+        if not new_role:
+            return  # No new role to assign
 
-    # Assign the new role and remove any previous XP-based roles
-    current_roles = user.roles
-    xp_roles = [guild.get_role(r["role_id"]) for r in role_requirements if guild.get_role(r["role_id"]) in current_roles]
-    
-    try:
-        await user.add_roles(new_role)
-        for role in xp_roles:
-            if role != new_role:
-                await user.remove_roles(role)
+        # Assign the new role and remove any previous XP-based roles
+        current_roles = user.roles
+        xp_roles = [guild.get_role(r["role_id"]) for r in role_requirements if guild.get_role(r["role_id"]) in current_roles]
+        
+        try:
+            await user.add_roles(new_role)
+            for role in xp_roles:
+                if role != new_role:
+                    await user.remove_roles(role)
 
-        await user.send(f"Congratulations! You've earned a new role: {new_role.name}")
-    except discord.Forbidden:
-        # Handle the case where the bot doesn't have permission to manage roles
-        await self.log_channel.send(f"Failed to assign role {new_role.name} to {user.mention} due to missing permissions.")
+            await user.send(f"Congratulations! You've earned a new role: {new_role.name}")
+        except discord.Forbidden:
+            # Handle the case where the bot doesn't have permission to manage roles
+            await self.log_channel.send(f"Failed to assign role {new_role.name} to {user.mention} due to missing permissions.")
         
 async def gpt_response( gpt , mode, prompt):
     if mode == 2:

@@ -1,0 +1,11 @@
+{
+    "name": "Defaults",
+    "description": "Default commands and events for the bot.",
+    "version": "1.0.0",
+    "color": "#00FF00",
+    "initFile": "main.py",
+    "commandsFolder": "commands",
+    "eventsFolder": "events",
+    "translationsFolder": "translations"
+  }
+  

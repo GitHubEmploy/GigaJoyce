@@ -1,0 +1,61 @@
+{
+    "xp_command_executed": "Seu comando de XP foi executado com sucesso!",
+    "xp_current_xp": "Você atualmente tem {xp} XP e está no nível {level}.",
+    "error_loading_translations": "Ocorreu um erro ao carregar as traduções.",
+    
+ 
+    "settings": {
+        "xp_multiplier": {
+            "name": "Multiplicador de XP",
+            "description": "Configure multiplicadores de XP para cargos no servidor e destaque as funções mais importantes. 🌟",
+            "role": {
+                "name": "Cargo",
+                "description": "Escolha o cargo que terá o multiplicador de XP."
+            },
+            "multiplier": {
+                "name": "Multiplicador",
+                "description": "Defina o multiplicador de XP para este cargo (exemplo: 1.5)."
+            },
+            "role_multiplier": {
+                "name": "Multiplicador por Cargo",
+                "description": "Atribua um multiplicador de XP específico para cada cargo no servidor."
+            },
+            "embed_title": "Configuração de Multiplicador de XP",
+            "embed_description": "Customize como os multiplicadores de XP influenciam os cargos do servidor."
+        },
+        "role_by_xp": {
+            "embed_title": "Atribuições de Cargos Baseadas em XP",
+            "embed_description": "Abaixo está a configuração dos cargos atribuídos com base nos níveis de XP.",
+            "remove_previous_status": "Empilhamento de Cargos Ativado",
+            "name": "Atribuição de Cargos por XP",
+            "description": "Configure a atribuição de cargos baseada nos níveis de XP.",
+            "remove_previous": {
+              "name": "Remover Cargo Anterior",
+              "description": "Se ativado, o cargo anterior será removido ao atribuir um novo."
+            },
+            "role_xp_list": {
+              "name": "Atribuições de XP",
+              "description": "Lista de cargos e seus requisitos de XP."
+            },
+            "role_xp": {
+              "name": "Entrada de Cargo por XP",
+              "description": "Uma entrada individual de cargo atribuída com base no XP.",
+              "xp_required": {
+                "name": "XP Necessário",
+                "description": "Quantidade de XP necessária para atribuir este cargo."
+              },
+              "assigned_role": {
+                "name": "Cargo Atribuído",
+                "description": "O cargo a ser atribuído quando o requisito de XP for atendido."
+              }
+            }
+          }
+    
+    },
+    "common": {
+        "enabled": "Ativado",
+        "disabled": "Desativado"
+      }
+
+    
+}
