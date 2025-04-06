@@ -11,3 +11,5 @@ traitlets==5.14.3
 fuzzywuzzy==0.18.0
 PyYAML==6.0.2
 python-Levenshtein==0.27.1 
+torch
+transformers[torch]
